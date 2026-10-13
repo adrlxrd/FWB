@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Friends With Builders (FWB)</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_FWB/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_FWB/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_FWB/favicon-16x16.png">
+    <link rel="manifest" href="favicon_FWB/site.webmanifest">
+    <meta name="description"
+        content="Learn more about Friends With Builders, our mission, and the team behind the ultimate builder community.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,700&family=Montserrat:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+</head>
+
+<body>
+    <div class="bg-video-wrapper" aria-hidden="true">
+        <video class="bg-video" autoplay loop muted playsinline>
+            <source src="images/backg.mp4" type="video/mp4">
+        </video>
+        <div class="bg-video-overlay"></div>
+    </div>
+
+    <header id="main-header" class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="FWB Logo">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="community.html">Community</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                        <mask class="moon" id="moon-mask-about">
+                            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                            <circle cx="24" cy="10" r="6" fill="black" />
+                        </mask>
+                        <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask-about)" fill="currentColor" />
+                        <g class="sun-beams" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="3" />
+                            <line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" />
+                            <line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </g>
+                    </svg>
+                </button>
+                <a href="contact.html" class="btn-primary-outline desktop-join">Join Now</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Full-screen mobile menu overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <nav class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn-primary mobile-join-btn">Join Now</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="page-hero">
+            <div class="hero-content">
+                <h1 class="page-title">Who we <span class="highlight-text">are.</span></h1>
+                <p class="hero-subtitle">We are a collective of developers, designers, and visionaries united by a
+                    singular purpose: to build the future, together.</p>
+            </div>
+            <div class="hero-glow"></div>
+        </section>
+
+        <section class="mission">
+            <div class="grid-container two-cols">
+                <div class="text-block reveal">
+                    <span class="eyebrow">OUR MISSION</span>
+                    <h2>ELEVATE <br><span class="highlight-text-light">THE STANDARD</span></h2>
+                    <p>FWB started with a very simple problem.</p>
+                    <p>One day, Suhani and her co-founder Palak were walking together, casually cribbing about how
+                        difficult it was to find the right people to build with. People with ambition were everywhere
+                        but finding people with ambition, skills, consistency and the willingness to actually execute
+                        was much harder.</p>
+                    <p>That conversation sparked FWB. Today, we’re building a curated ecosystem where founders,
+                        creators, developers, designers, marketers and other ambitious individuals can find people worth
+                        building with.</p>
+                    <p>Every member is manually reviewed because our goal was never to create the biggest community.
+                        <strong>It’s to create the right one.</strong>
+                    </p>
+                </div>
+                <div class="image-block reveal">
+                    <!-- Placeholder for team/collaboration image -->
+                    <div class="placeholder-img glow-border"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="section-header text-center">
+                <h2>THE <span class="highlight-text">FOUNDING BUILDERS</span></h2>
+                <p>The core team driving the FWB vision forward.</p>
+            </div>
+            <div class="grid-container">
+                <!-- Team Member -->
+                <div class="card text-center reveal">
+                    <div class="avatar-large"></div>
+                    <h3>Suhani Sharma</h3>
+                    <p>Founder</p>
+                </div>
+                <!-- Team Member -->
+                <div class="card text-center reveal">
+                    <div class="avatar-large"></div>
+                    <h3>Palak Sharma</h3>
+                    <p>Founder</p>
+                </div>
+                <!-- Team Member -->
+                <div class="card text-center reveal">
+                    <div class="avatar-large"></div>
+                    <h3>[Name]</h3>
+                    <p>Tech Lead</p>
+                </div>
+                <!-- Team Member -->
+                <div class="card text-center reveal">
+                    <div class="avatar-large"></div>
+                    <h3>[Name]</h3>
+                    <p>Communications Lead</p>
+                </div>
+                <!-- Team Member -->
+                <div class="card text-center reveal">
+                    <div class="avatar-large"></div>
+                    <h3>[Name]</h3>
+                    <p>Community Lead</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="FWB Logo" class="footer-logo">
+                <p>More than a networking community, FWB is building an ecosystem of people worth knowing—connecting the
+                    builders of today with the possibilities of tomorrow.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>PLATFORM</h4>
+                    <a href="#">Our Vision</a>
+                    <a href="#">Network</a>
+                    <a href="#">API Integrations</a>
+                    <a href="#">Showcase</a>
+                </div>
+                <div class="link-column">
+                    <h4>ASSETS</h4>
+                    <a href="#">Tools</a>
+                    <a href="#">Boilerplates</a>
+                    <a href="#">Design</a>
+                    <a href="#">Legal</a>
+                </div>
+                <div class="link-column">
+                    <h4>COMPANY</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Friends With Builders. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

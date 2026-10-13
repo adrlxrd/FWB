@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends With Builders (FWB) - The Community for Builders</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_FWB/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_FWB/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_FWB/favicon-16x16.png">
+    <link rel="manifest" href="favicon_FWB/site.webmanifest">
+    <meta name="description"
+        content="Friends With Builders (FWB) is a curated community for ambitious founders, entrepreneurs, developers, designers, creators, marketers, and students who want to build, collaborate, and grow together. FWB connects driven individuals with the right people, skills, ideas, and opportunities to turn ideas into meaningful projects and businesses.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,700&family=Montserrat:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+</head>
+
+<body>
+    <div class="bg-video-wrapper" aria-hidden="true">
+        <video class="bg-video" autoplay loop muted playsinline>
+            <source src="images/backg.mp4" type="video/mp4">
+        </video>
+        <div class="bg-video-overlay"></div>
+    </div>
+
+    <header id="main-header" class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="FWB Logo">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="community.html">Community</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                        <mask class="moon" id="moon-mask">
+                            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                            <circle cx="24" cy="10" r="6" fill="black" />
+                        </mask>
+                        <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                        <g class="sun-beams" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="3" />
+                            <line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" />
+                            <line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </g>
+                    </svg>
+                </button>
+                <a href="contact.html" class="btn-primary-outline desktop-join">Join Now</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Full-screen mobile menu overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn-primary mobile-join-btn">Join Now</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">FWB<br><span class="highlight-text">Connecting builders.</span></h1>
+                <p class="hero-subtitle">FWB (Friends With Builders) is a curated active community for ambitious people
+                    who want to build, create, collaborate, and grow. From founders and developers to designers,
+                    marketers and creators. FWB brings together people who are actually doing things, not just talking
+                    about them.<br><br>Because sometimes, you don’t need another course or another motivational video.
+                    <strong>You just need the right people around you.</strong>
+                </p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn-primary">Get in Touch <span class="arrow">→</span></a>
+                </div>
+            </div>
+            <div class="hero-glow"></div>
+        </section>
+
+        <section class="benefits" id="benefits">
+            <div class="section-header">
+                <span class="eyebrow">OUR FEATURES</span>
+                <h2>BUILT FOR <br><span class="highlight-text">SERIOUS BUILDERS</span></h2>
+            </div>
+
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-handshake"></i></div>
+                    <h3>Collaboration</h3>
+                    <p>Find the perfect co-founder or team members who share your passion and drive.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-lightbulb"></i></div>
+                    <h3>Brainstorming</h3>
+                    <p>Bounce ideas off a network of experienced developers, designers, and marketers.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-rocket"></i></div>
+                    <h3>Rapid Execution</h3>
+                    <p>Turn ideas into reality faster with shared resources and accountability.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-trend-up"></i></div>
+                    <h3>Scale Together</h3>
+                    <p>Leverage the community's network to launch and grow your product.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-brain"></i></div>
+                    <h3>Skill Sharing</h3>
+                    <p>Learn new tech stacks and methodologies from peers building cutting-edge tools.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-wrench"></i></div>
+                    <h3>Exclusive Tools</h3>
+                    <p>Get access to internal templates, boilerplate code, and premium resources.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" id="about">
+            <div class="experience-card">
+                <div class="experience-content">
+                    <span class="eyebrow">THE COMMUNITY</span>
+                    <h2>EXPERIENCE THE <br><span class="highlight-text-light">DIFFERENCE</span></h2>
+                    <p>Step away from noisy platforms and join a curated space designed exclusively for building modern,
+                        scalable solutions.</p>
+                    <a href="contact.html" class="btn-secondary">Start Building →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="voices" id="community">
+            <div class="section-header">
+                <h2>VOICES OF <br><span class="highlight-text">THE BUILDERS</span></h2>
+                <p>Trusted by over 10,000 creators, devs, and pros.</p>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p>"FWB completely transformed how I build. I found my technical co-founder here in just a week!"
+                    </p>
+                    <div class="author">
+                        <div class="avatar"></div>
+                        <div class="author-info">
+                            <strong>Alex M.</strong>
+                            <span>Full-Stack Engineer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p>"The highest signal-to-noise ratio of any builder community. Everyone is actually shipping."</p>
+                    <div class="author">
+                        <div class="avatar"></div>
+                        <div class="author-info">
+                            <strong>Sarah J.</strong>
+                            <span>Product Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p>"I've been coding alone for 5 years. FWB gave me the team I always needed to scale my SaaS."</p>
+                    <div class="author">
+                        <div class="avatar"></div>
+                        <div class="author-info">
+                            <strong>David C.</strong>
+                            <span>Indie Hacker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" id="join">
+            <div class="cta-glow-container">
+                <h2>START YOUR <br><span class="highlight-text-light">JOURNEY TODAY</span></h2>
+                <p>Join 10,000+ creators and builders. It takes 2 minutes and gets you access to an exclusive builder
+                    network.</p>
+                <a href="contact.html" class="btn-primary">Create Free Account →</a>
+                <a href="contact.html" class="link-subtle">Schedule a Demo</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="FWB Logo" class="footer-logo">
+                <p>More than a networking community, FWB is building an ecosystem of people worth knowing—connecting the
+                    builders of today with the possibilities of tomorrow.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>PLATFORM</h4>
+                    <a href="#">Our Vision</a>
+                    <a href="#">Network</a>
+                    <a href="#">API Integrations</a>
+                    <a href="#">Showcase</a>
+                </div>
+                <div class="link-column">
+                    <h4>ASSETS</h4>
+                    <a href="#">Tools</a>
+                    <a href="#">Boilerplates</a>
+                    <a href="#">Design</a>
+                    <a href="#">Legal</a>
+                </div>
+                <div class="link-column">
+                    <h4>COMPANY</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Friends With Builders. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

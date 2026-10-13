@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Friends With Builders (FWB)</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_FWB/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_FWB/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_FWB/favicon-16x16.png">
+    <link rel="manifest" href="favicon_FWB/site.webmanifest">
+    <meta name="description" content="Get in touch with the Friends With Builders team.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,700&family=Montserrat:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+</head>
+
+<body>
+    <div class="bg-video-wrapper" aria-hidden="true">
+        <video class="bg-video" autoplay loop muted playsinline>
+            <source src="images/backg.mp4" type="video/mp4">
+        </video>
+        <div class="bg-video-overlay"></div>
+    </div>
+
+    <header id="main-header" class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="FWB Logo">
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="community.html">Community</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                        <mask class="moon" id="moon-mask-contact">
+                            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                            <circle cx="24" cy="10" r="6" fill="black" />
+                        </mask>
+                        <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask-contact)" fill="currentColor" />
+                        <g class="sun-beams" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="3" />
+                            <line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" />
+                            <line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </g>
+                    </svg>
+                </button>
+                <a href="contact.html" class="btn-primary-outline desktop-join">Join Now</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Full-screen mobile menu overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <nav class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="contact.html" class="btn-primary mobile-join-btn">Join Now</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="page-hero">
+            <div class="hero-content">
+                <h1 class="page-title">Let's <span class="highlight-text">Talk.</span></h1>
+                <p class="hero-subtitle">Have a question, want to partner, or just want to say hi? Reach out.</p>
+            </div>
+            <div class="hero-glow"></div>
+        </section>
+
+        <section class="contact-section">
+            <div class="grid-container two-cols">
+                <div class="contact-info reveal">
+                    <h2>GET IN <span class="highlight-text-light">TOUCH</span></h2>
+                    <p>We're always open to collaborating with fellow builders. Drop us a message and we'll get back to
+                        you within 24 hours.</p>
+
+                    <div class="contact-links">
+                        <a href="#" class="link-subtle">support@fwb.community</a>
+                        <a href="#" class="link-subtle">Discord Server</a>
+                        <a href="#" class="link-subtle">Twitter / X</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container reveal">
+                    <!-- PLACEHOLDER FOR EMAILJS (IDs added for easy mapping) -->
+                    <form id="contact-form" class="custom-form">
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can we build together?"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" id="submit-btn">Send Message <span
+                                class="arrow">→</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="FWB Logo" class="footer-logo">
+                <p>More than a networking community, FWB is building an ecosystem of people worth knowing—connecting the
+                    builders of today with the possibilities of tomorrow.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>PLATFORM</h4>
+                    <a href="#">Our Vision</a>
+                    <a href="#">Network</a>
+                    <a href="#">API Integrations</a>
+                    <a href="#">Showcase</a>
+                </div>
+                <div class="link-column">
+                    <h4>ASSETS</h4>
+                    <a href="#">Tools</a>
+                    <a href="#">Boilerplates</a>
+                    <a href="#">Design</a>
+                    <a href="#">Legal</a>
+                </div>
+                <div class="link-column">
+                    <h4>COMPANY</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Friends With Builders. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("xLuca4gjEwSn6w8lM");
+        })();
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
